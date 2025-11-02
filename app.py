@@ -143,22 +143,22 @@ def gemini_analyze_paragraph(paragraph: str):
 You are an **advanced linguistic analysis system** trained for professional-grade sentiment analysis.
 
 TASK OBJECTIVES:
-1️⃣ Identify the **core sentiment polarity** ("positive", "negative", or "neutral").
-2️⃣ Assign a **tone strength score** (0–100) for emotional intensity.
-3️⃣ Detect **dominant emotion** ("joy", "anger", "fear", "sadness", "trust", "disgust", or "none").
-4️⃣ Identify the **subject focus** (who/what the paragraph mainly discusses in 3–6 words).
-5️⃣ Generate a **concise, factual summary** (3–5 sentences).
-6️⃣ Calculate a **readability score** (1–10).
-7️⃣ If text implies fraud, illegality, or unethical activity, add “fraud_signal”: true.
+1- Identify the **core sentiment polarity** ("positive", "negative", or "neutral").
+2-Assign a **tone strength score** (0-100) for emotional intensity.
+3-Detect **dominant emotion** ("joy", "anger", "fear", "sadness", "trust", "disgust", or "none").
+4- Identify the **subject focus** (who/what the paragraph mainly discusses in 3-6 words).
+5-Generate a **concise, factual summary** (3-5 sentences).
+6-Calculate a **readability score** (1-10).
+7-If text implies fraud, illegality, or unethical activity, add “fraud_signal”: true.
 
 Return only JSON:
 {{
   "polarity": "positive|negative|neutral",
-  "tone_strength": 0–100,
+  "tone_strength": 0-100,
   "emotion": "joy|anger|fear|sadness|trust|disgust|none",
   "subject_focus": "string",
   "summary": "concise summary",
-  "readability_score": 1–10,
+  "readability_score": 1-10,
   "fraud_signal": true|false
 }}
 
